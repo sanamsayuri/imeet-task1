@@ -7,24 +7,30 @@ import { BrowserRouter as Route,Routes,Router } from 'react-router-dom';
 import About from './components/About';
 import Registration from './components/Registration';
 import Login from './components/Login';
+import Contact from './components/Contact';
+
 
 
 
 function App() {
   return (
       <>
-      <Router>
       <div className='flex flex-col h-screen justify-between'>
+      <Router>
+      
       <Navbar />
         <Routes>
-        <Route path="/" Component={Hero } />
-        <Route path="/About" Component={About}></Route>
-        <Route path="/Registration" Component={Registration}></Route>
-        <Route path="/Login" Component={Login}></Route>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={< About/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/registration" element={<Registration/>} />
+        <Route path="/login" element={<Login />} />
+         
         </Routes>
         <Footer />
-      </div>
+     
       </Router>
+      </div>
      
     
      </>

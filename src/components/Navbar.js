@@ -17,15 +17,15 @@ const Navbar = () => {
           </div>
           <ul className='flex'>
           <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-            <Link to='./Hero.js'>{Home}</Link>
+            <Link to='/Hero.js'>{Home}</Link>
            </li>
           
        
            <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-            <Link to='./Contact.js'>{Contact}</Link>
+            <Link to='/Contact.js'>{Contact}</Link>
            </li>
            <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-            <Link to='./Registration.js'>{Registration}</Link>
+            <Link to='/Registration.js'>{Registration}</Link>
            </li>
           
           
@@ -33,7 +33,7 @@ const Navbar = () => {
 
           
            <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-             <Link to='./Login.js'>{Login}</Link>
+             <Link to='/Login.js'>{Login}</Link>
            </li>
 
           </ul>
