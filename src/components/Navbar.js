@@ -1,4 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+
+const Home = <h1>Home</h1>
+const Contact=<h1>Contact us</h1>
+const Registration=<h1>Registration</h1>
+const Login =<h1>Login</h1>
 
 const Navbar = () => {
   return (
@@ -8,12 +15,32 @@ const Navbar = () => {
           <div className="flex items-center">
             <span className="text-white text-lg font-semibold">React.</span>
           </div>
-          <div className="flex">
-            <a href="#" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-          </div>
+          <ul className='flex'>
+          <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
+            <Link to='./Hero.js'>{Home}</Link>
+           </li>
+          
+       
+           <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
+            <Link to='./Contact.js'>{Contact}</Link>
+           </li>
+           <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
+            <Link to='./Registration.js'>{Registration}</Link>
+           </li>
+          
+          
+
+
+          
+           <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
+             <Link to='./Login.js'>{Login}</Link>
+           </li>
+
+          </ul>
+          
+           
+          
+       
         </div>
       </div>
     </nav>
