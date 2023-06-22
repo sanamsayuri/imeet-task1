@@ -2,10 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
+
 const Home = <h1>Home</h1>
 const Contact=<h1>Contact us</h1>
 const Registration=<h1>Registration</h1>
 const Login =<h1>Login</h1>
+const About =<h1>About us</h1>
 
 const Navbar = () => {
   return (
@@ -17,15 +19,18 @@ const Navbar = () => {
           </div>
           <ul className='flex'>
           <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-            <Link to='/Hero.js'>{Home}</Link>
+            <Link to='./Hero.js'>{Home}</Link>
+           </li>
+           <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
+            <Link to='./About.js'>{About}</Link>
            </li>
           
        
            <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-            <Link to='/Contact.js'>{Contact}</Link>
+            <Link to='./Contact.js'>{Contact}</Link>
            </li>
            <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-            <Link to='/Registration.js'>{Registration}</Link>
+            <Link to='./Registration.js'>{Registration}</Link>
            </li>
           
           
@@ -33,7 +38,7 @@ const Navbar = () => {
 
           
            <li className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium' >
-             <Link to='/Login.js'>{Login}</Link>
+             <Link to='./Login.js'>{Login}</Link>
            </li>
 
           </ul>
